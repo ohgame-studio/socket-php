@@ -22,7 +22,7 @@
 	}
 
 	$(document).ready(function(){
-		var websocket = new WebSocket("ws://localhost:8090/demo/php-socket.php"); 
+		var websocket = new WebSocket("ws://socket.ohgame.io.vn:8090/server.php"); 
 		websocket.onopen = function(event) { 
 			showMessage("<div class='chat-connection-ack'>Connection is established!</div>");		
 		}
