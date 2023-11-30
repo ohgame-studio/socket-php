@@ -28,8 +28,8 @@ class echoServer extends WebSocketServer {
     // has been closed, so there is no need to clean up the socket itself here.
   }
 }
-
-$echo = new echoServer("0.0.0.0","9000");
+$maxBufferSize = 1024;
+$echo = new echoServer("0.0.0.0","9000",$maxBufferSize);
 
 try {
   $echo->run();
